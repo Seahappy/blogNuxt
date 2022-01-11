@@ -2,7 +2,7 @@
  * @Author: Cxy
  * @Date: 2021-03-03 14:18:15
  * @LastEditors: Cxy
- * @LastEditTime: 2022-01-07 19:28:19
+ * @LastEditTime: 2022-01-11 17:46:01
  * @FilePath: \blog\blogNuxt\components\navTopBottom\navTop.vue
 -->
 <template>
@@ -40,6 +40,7 @@
             </span>
           </SHToolTip>
           <a
+            target='_blank'
             style='
               display: inline-block;
               margin: 0 17px 0 10px;

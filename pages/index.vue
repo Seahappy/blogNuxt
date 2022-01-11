@@ -2,7 +2,7 @@
  * @Author: Cxy
  * @Date: 2021-12-27 17:47:35
  * @LastEditors: Cxy
- * @LastEditTime: 2022-01-06 17:25:51
+ * @LastEditTime: 2022-01-11 17:38:36
  * @FilePath: \blog\blogNuxt\pages\index.vue
 -->
 <template>
@@ -1106,6 +1106,7 @@ export default {
         }
       }
       .home_Administration {
+        padding: 3vh 0 0 0;
         .Administration_Lander_Wrap {
           .Administration_Right_Lander_Item {
             width: 33%;
