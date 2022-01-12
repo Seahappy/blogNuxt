@@ -2,11 +2,15 @@
  * @Author: Cxy
  * @Date: 2021-02-27 23:02:14
  * @LastEditors: Cxy
- * @LastEditTime: 2022-01-06 19:23:43
+ * @LastEditTime: 2022-01-12 17:55:50
  * @FilePath: \blog\blogNuxt\store\index.js
  */
 
 import { Views_Totle } from '@/http/model/other.js'
+
+export const state = () => ({
+  app_Background_Url: 'background-image: url(/home/backGroundImage' + new Date().getDay() + '.jpg);'
+})
 
 export const mutations = {
   /**

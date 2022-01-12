@@ -3,7 +3,7 @@
  * @Author: Cxy
  * @Date: 2021-08-18 15:46:30
  * @LastEditors: Cxy
- * @LastEditTime: 2021-12-30 17:27:58
+ * @LastEditTime: 2022-01-11 18:11:35
  * @FilePath: \blog\blogNuxt\components\backtotop.vue
 -->
 <template>
@@ -57,8 +57,9 @@ export default {
   height: 50px;
   background: #b79764;
   color: #fff;
-  line-height: 50px;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
   font-size: 18px;
   border: solid 2px #b79764;
@@ -101,7 +102,6 @@ export default {
     height: 35px;
     right: 5%;
     bottom: 50px;
-    line-height: 35px;
     i {
       font-size: 10px;
     }

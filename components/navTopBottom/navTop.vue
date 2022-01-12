@@ -2,7 +2,7 @@
  * @Author: Cxy
  * @Date: 2021-03-03 14:18:15
  * @LastEditors: Cxy
- * @LastEditTime: 2022-01-11 17:46:01
+ * @LastEditTime: 2022-01-12 17:45:53
  * @FilePath: \blog\blogNuxt\components\navTopBottom\navTop.vue
 -->
 <template>
@@ -284,6 +284,7 @@ export default {
   },
   computed: {
     ...mapState('article', ['Article_Tag_Total']),
+    ...mapState(['app_Background_Url']),
     ...mapState('mixed', ['current_Position', 'now_Weather', 'Hot_City'])
   },
   created() {
@@ -389,9 +390,10 @@ export default {
       if (newV) {
         if (!this.Article_Tag_Total.length) this.Article_Tag_Find()
         body.style.cssText =
-          'width: 100%; height: 100%; position: fixed; left: 0; overflow: hidden;'
+          this.app_Background_Url + 'width: 100%; height: 100%; position: fixed; left: 0; overflow: hidden;'
       } else {
-        body.removeAttribute('style')
+        body.style.cssText = this.app_Background_Url
+        // body.removeAttribute('style')
       }
     }
   }
