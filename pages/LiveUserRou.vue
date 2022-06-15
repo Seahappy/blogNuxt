@@ -3,7 +3,7 @@
  * @Author: Cxy
  * @Date: 2022-06-04 14:02:35
  * @LastEditors: Cxy
- * @LastEditTime: 2022-06-15 11:28:31
+ * @LastEditTime: 2022-06-15 16:47:48
  * @FilePath: \ehomes-admind:\gitHubBlog\blogNuxt\pages\LiveUserRou.vue
 -->
 <template>
@@ -133,7 +133,7 @@ export default {
           const barrage_Last =
             (new Date().getTime() -
               this.barrage_Dom_Memory_Data.barrage_Start) *
-              0.2 <
+              0.15 <
             this.barrage_Dom_Memory_Data.barrage_Width
           if (barrage_Last) {
             c.barrage_Dom.style.top = '30px'
