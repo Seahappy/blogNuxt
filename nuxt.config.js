@@ -2,8 +2,8 @@
  * @Author: Cxy
  * @Date: 2021-12-25 11:47:36
  * @LastEditors: Cxy
- * @LastEditTime: 2022-01-04 17:31:24
- * @FilePath: \blog\blogNuxt\nuxt.config.js
+ * @LastEditTime: 2022-06-15 08:39:40
+ * @FilePath: \ehomes-admind:\gitHubBlog\blogNuxt\nuxt.config.js
  */
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -41,8 +41,20 @@ export default {
     '~/plugins/filters',
     '~/plugins/lunar',
     '~/plugins/subgroups',
-    { src: '~/plugins/qrcode', mode: 'client' }
+    { src: '~/plugins/qrcode', mode: 'client' },
+    { src: '~/plugins/flv', mode: 'client' },
+    { src: '~/plugins/socketIo' }
   ],
+
+  router: {
+    extendRoutes(routes, resolve) {
+      routes.push({
+        name: 'LiveUser',
+        path: '/LiveUser/:Id',
+        component: resolve(__dirname, 'pages/LiveUserRou')
+      })
+    }
+  },
 
   // 禁用进度条
   loading: false,
@@ -71,6 +83,12 @@ export default {
         '^/api': ''
       }
       // secure: false, // 去除https证书校验
+    },
+    '/SeaHappy-Blog': {
+      target: 'https://127.0.0.1:520',
+      changeOrigin: true,
+      ws: true,
+      secure: false // 去除https证书校验
     }
   },
 

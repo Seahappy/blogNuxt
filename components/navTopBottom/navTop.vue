@@ -2,8 +2,8 @@
  * @Author: Cxy
  * @Date: 2021-03-03 14:18:15
  * @LastEditors: Cxy
- * @LastEditTime: 2022-01-12 17:45:53
- * @FilePath: \blog\blogNuxt\components\navTopBottom\navTop.vue
+ * @LastEditTime: 2022-06-14 10:49:59
+ * @FilePath: \ehomes-admind:\gitHubBlog\blogNuxt\components\navTopBottom\navTop.vue
 -->
 <template>
   <div ref='pronbit' class='home_Top_Nav'>
@@ -276,6 +276,7 @@ export default {
       nav_Data: [
         { title: '首页', path: '/' },
         { title: '博客', path: '/Blog' },
+        { title: '直播', path: '/Live' },
         { title: '时间轴', path: '/TimeLine' },
         { title: '关于', path: '/About' },
         { title: '留言', path: '/Contact' }

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
+    "serve": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate"
@@ -15,10 +15,12 @@
     "default-passive-events": "^2.0.0",
     "echarts": "^5.2.2",
     "echarts-wordcloud": "^2.0.0",
+    "flv.js": "^1.6.2",
     "lunar-javascript": "^1.0.36",
     "mavon-editor": "^2.10.4",
     "nuxt": "^2.15.8",
     "qweather-icons": "^1.1.0",
+    "socket.io-client": "^4.0.1",
     "vue": "^2.6.14",
     "vue-server-renderer": "^2.6.14",
     "webpack": "^4.46.0"
