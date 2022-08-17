@@ -3,13 +3,13 @@
  * @Author: Cxy
  * @Date: 2021-12-27 19:40:31
  * @LastEditors: Cxy
- * @LastEditTime: 2022-01-04 17:37:40
- * @FilePath: \blog\blogNuxt\layouts\default.vue
+ * @LastEditTime: 2022-08-15 01:25:51
+ * @FilePath: \blogGitee\blogNuxt\layouts\default.vue
 -->
 <template>
   <div
     id='app'
-    :style="{ backgroundImage: 'url(/home/backGroundImage' + new Date().getDay() + '.jpg)'}">
+    :style="{ backgroundImage: 'url(/homeBG/backGroundImage' + new Date().getHours() + '.png)'}">
     <div id='anchor_Point'/>
     <TopNav />
     <Nuxt />

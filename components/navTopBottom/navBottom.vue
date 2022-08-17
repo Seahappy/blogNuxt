@@ -2,8 +2,8 @@
  * @Author: Cxy
  * @Date: 2021-03-23 15:50:57
  * @LastEditors: Cxy
- * @LastEditTime: 2022-01-04 17:37:18
- * @FilePath: \blog\blogNuxt\components\navTopBottom\navBottom.vue
+ * @LastEditTime: 2022-07-05 08:44:19
+ * @FilePath: \ehomes-admind:\giteeBlog\blogNuxt\components\navTopBottom\navBottom.vue
 -->
 <template>
   <div ref='navBottom' class='navBottom'>
@@ -26,7 +26,7 @@
       <div>
         © Copyright 2020-2021 备案号：<span @click='copyContent'>蒙ICP备2021000838号</span>
         SeaHappy All rights reserved.
-        <a style='margin-left: 10px;' class='fa fa-openid' aria-hidden='true' href='https://www.seahappy.xyz/blogserve/siteMap.xml'>网站地图</a>
+        <a style='margin-left: 10px;' class='fa fa-openid' aria-hidden='true' href='https://www.seahappy.xyz/blogServe/siteMap.xml'>网站地图</a>
       </div>
     </div>
   </div>
